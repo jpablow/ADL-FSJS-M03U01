@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: ghostwhite;
+}
+
+.prod_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 500px;
+}
+
+.prod_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px crimson;
+    border-radius: 8px;
+    width: 400px;
+    background-color: white;
+    margin: 50px 0px;
+    padding: 50px 0px;
+}
+
+.prod_card_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prod_card_img img {
+    width: 300px;
+    height: 200px;
+}
+
+.prod_card_img p {
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+.prod_order {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 200px;
+}
+
+input {
+    margin: 15px 0px;
+    height: 25px;
+}
+
+select:invalid {
+    color: gray;
+}
+
+select {
+    height: 30px;
+}
+
+.prod_order_price {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: firebrick;
+    color: whitesmoke;
+}
+
+.prod_summary {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.prod_summ_total {
+    display: flex;
+}
+
+.prod_summ_q {
+    display: flex;
+}
+
+#prod_q {
+    margin-left: 5px;
+}
+
+.prod_summ_color {
+    display: flex;
+}
+
+#prod_color {
+    width: 40px;
+    height: 40px;
+    border: solid 3px gray;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: ghostwhite;
+}

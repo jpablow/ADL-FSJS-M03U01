@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando el total</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="prod_container">
+        <div class="prod_card">
+            <div class="prod_card_img">
+                <img src="/assets/img/drilledBremboFront.png" alt="Kit frenos delanteros perforados 6P Brembo">
+                <p>Brembo - Kit de frenos delanteros perforados 6 pistones</p>
+            </div>
+
+            <div class="prod_order">
+                <input type="number" placeholder="Cantidad">
+                <select name="Color" id="prodColor" required onchange="
+                
+                ">
+                    <option value="" disabled selected hidden>Selecciona el color</option>
+                    <option value="red">Rojo</option>
+                    <option value="greenyellow">Verde</option>
+                    <option value="mediumblue">Azul</option>
+                    <option value="deeppink">Fucsia</option>
+                </select>
+                <div class="prod_order_price">
+                    <p>Precio: $</p>
+                    <p id="prod_price">987890</p>
+                </div>
+            </div>
+
+            <div class="prod_card_button">
+                <button> Calcular Total</button>
+            </div>
+        </div>
+        <div class="prod_summary">
+            <div class="prod_summ_total">
+                <p>Total: $</p>
+                <p id="prod_tot_price">0</p>
+            </div>
+
+            <div class="prod_summ_q">
+                <p>Cantidad: </p>
+                <p id="prod_q">0</p>
+            </div>
+
+            <div class="prod_summ_color">
+                <p>Color: </p>
+                <div id="prod_color"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
