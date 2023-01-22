@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js"></script>
 </head>
 
 <body>
@@ -21,9 +22,11 @@
             </div>
 
             <div class="prod_order">
-                <input type="number" placeholder="Cantidad">
+                <input type="number" placeholder="Cantidad" onchange="
+                    vq=document.querySelector('input').value;
+                ">
                 <select name="Color" id="prodColor" required onchange="
-                
+                    vcolor=document.querySelector('#prodColor').value;
                 ">
                     <option value="" disabled selected hidden>Selecciona el color</option>
                     <option value="red">Rojo</option>
@@ -38,7 +41,13 @@
             </div>
 
             <div class="prod_card_button">
-                <button> Calcular Total</button>
+                <button onclick="
+                    vprice=987890;
+                    vtotal=vprice*Number(vq);
+                    document.querySelector('#prod_tot_price').innerHTML=vtotal;
+                    document.querySelector('#prod_q').innerHTML=vq;
+                    document.querySelector('#prod_color').style.backgroundColor=vcolor;
+                "> Calcular Total</button>
             </div>
         </div>
         <div class="prod_summary">
