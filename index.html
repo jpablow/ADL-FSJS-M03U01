@@ -42,7 +42,8 @@
 
             <div class="prod_card_button">
                 <button onclick="
-                    vprice=987890;
+                    vprice=document.querySelector('#prod_price');
+                    vprice=Number(vprice.innerHTML);
                     vtotal=vprice*Number(vq);
                     document.querySelector('#prod_tot_price').innerHTML=vtotal;
                     document.querySelector('#prod_q').innerHTML=vq;
