@@ -8,7 +8,7 @@ body {
 .prod_container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: auto auto;
 }
 
 .prod_card {
@@ -19,7 +19,7 @@ body {
     border-radius: 8px;
     width: 400px;
     background-color: white;
-    margin: 50px 0px;
+    margin: 50px 50px 50px 0px;
     padding: 50px 0px;
 }
 
@@ -80,6 +80,7 @@ button {
     flex-direction: column;
     font-weight: bold;
     justify-content: center;
+    margin-left: 50px;
 }
 
 .prod_summ_total {
